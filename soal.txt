@@ -1,0 +1,42 @@
+1.	Bagaimana cara membuat project Flutter menggunakan terminal/cmd?
+2.	Apa aturan dalam memberikan nama project pada Flutter?
+3.	Apa saja folder yang secara khusus disiapkan oleh Flutter untuk menjalankan aplikasi pada platform tertentu?
+4.	Apa fungsi dari folder .dart_tools dan .idea?
+5.	Bagaimana cara membuka project Flutter menggunakan Visual Studio Code?
+6.	Mengapa kita perlu memastikan Android SDK terinstall untuk menjalankan aplikasi Flutter di sistem operasi Android?
+7.	Apa langkah-langkah untuk mengatasi masalah "Android Toolchain error" pada perintah flutter doctor?
+8.	Bagaimana cara menambahkan Android SDK Command-line tools melalui Android Studio?
+9.	Apa fungsi dari file .gitignore dalam struktur folder Flutter?
+10.	Mengapa file pubspec.yaml sangat penting dalam pengembangan aplikasi Flutter?
+11.	Apa yang dimaksud dengan widget dalam konteks Flutter?
+12.	Bagaimana pewarisan (inheritance) digunakan dalam pembuatan widget Flutter?
+13.	Apa peran widget MaterialApp dalam pembuatan aplikasi Flutter?
+14.	Mengapa kita membutuhkan fungsi runApp untuk menjalankan aplikasi Flutter?
+15.	Apa kegunaan widget Scaffold dalam struktur aplikasi Flutter?
+16.	Bagaimana cara menambahkan app bar dan body pada widget Scaffold?
+17.	Apa perbedaan antara Stateless Widget dan Stateful Widget?
+18.	Mengapa Stateful Widget disebut memiliki state internal?
+19.	Berikan contoh penggunaan Stateless Widget dalam pembuatan aplikasi Flutter.
+20.	Berikan contoh penggunaan Stateful Widget dalam pembuatan aplikasi Flutter beserta alasan penggunaannya.
+
+jawab
+1. buat dengan mengetikan 'flutter create nama_project'
+2. menggunakan huruf kecil, tidak mnggunakan karakter special dan spasi, jika ingin spasi bisa menggunakan underscore
+3. folder android dan ios
+4. folder '.dart-tools' menyimpan konfigurasi dart package yang di generate oleh flutter dan folder idea ini menyimpan beberapa konfigurasi untuk android studio.
+5. buka vs code lalu open folder dan pilih project kita
+6. Karena Flutter menggunakan Android SDK untuk mengkompilasi dan menjalankan aplikasi di platform Android
+7. 1. Install android studio 2. pilih device 3. pilih system image 4.Masuk Android Studio, Klik More Actions, Pilih SDK Manager 5. Pilih Tab SDK Tools, centang Android SDK Command-line 6. Menerima Lisensi Android dengan mengetikkan 'flutter doctor --android-licenses' 
+8. Pilih Tab SDK Tools, centang Android SDK Command-line
+9.  berisi list folder atau file yang tidak akan ikut masuk kedalam git repository ketika kita push ke repository tersebut.
+10. digunakan supaya dapat menggunakan class dan library yang telah disediakan oleh flutter
+11. widget adalah blok penyusun UI yang dapat kita lihat di layar. Widget juga sering berisi widget lain, seperti list daftar yang berisi daftar item.
+12. Widget diwarisi dari widget lain untuk menambahkan atau mengubah fungsionalitas.
+13. MaterialApp menyediakan struktur dan konfigurasi dasar untuk aplikasi, termasuk navigasi dan tema.
+14. runApp() digunakan untuk memulai eksekusi aplikasi dan merender widget utama.
+15. Scaffold menyediakan struktur dasar aplikasi, termasuk AppBar, Body, dan lainnya.
+16. Menggunakan name argumen 'appbar' dan 'body' setelah kita mereturn scaffold 
+17. Stateless widget adalah widget statis dimana seluruh konfigurasi yang dimuat didalamnya telah diinisiasi sejak awal. Sedangkan Stateful widget berlaku sebaliknya dimana sifatnya adalah dinamis, sehingga widget ini dapat diperbaharui kapanpun dibutuhkan berdasarkan user actions atau ketika terjadinya perubahan data.
+18. Karena Stateful Widget dapat menyimpan data yang berubah selama siklus hidup aplikasi.
+19. Contoh: Text widget untuk menampilkan teks statis.
+20. Contoh: TextField untuk input teks yang memerlukan pembaruan dan pemantauan state.
